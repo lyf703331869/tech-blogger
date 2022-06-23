@@ -1,0 +1,30 @@
+<!-- Loop over each object in the projects array -->
+{{#each blogs as |blog|}}
+  <div class="row">
+    <a href="/blog/{{blog.id}}"><div class="card">
+        <div class="card-header">
+          <div>
+            {{blog.title}}
+          </div>
+          <div>
+            <p>Created by you on
+              {{format_date blog.creating_date}}</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <blockquote>
+            <p>{{blog.content}}</p>
+          </blockquote>
+        </div>
+      </div></a>
+    <div class="col-md-4">
+      <button
+        class="btn delete-btn btn-danger"
+        data-id="{{blog.id}}"
+      >DELETE</button>
+    </div>
+  </div>
+{{/each}}
+<button id="add-blog">New Blog</button>
+
+<script src="./js/dashboard.js"></script>
