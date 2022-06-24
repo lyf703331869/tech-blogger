@@ -24,6 +24,8 @@ const oldBlogHandler = async (event) => {
     }
   }
 };
+
+// when user click on submit button, fetch put request to update the current blog
 document
   .querySelector(".edit-blog-form")
   .addEventListener("submit", oldBlogHandler);
