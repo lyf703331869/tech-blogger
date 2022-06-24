@@ -1,32 +1,27 @@
 [
   {
-    "title": "Test File1",
-    "content": "This is a test blog.",
-    "creating_date": "June 22, 2022 11:00:00",
-    "user_id": 3
+    "title": "FDA Orders Juul to Stop Selling in the US",
+    "content": "The US Food and Drug Administration on Thursday issued marketing denial orders to Juul Labs for all of the company's products currently marketed in the US. This means Juul must stop selling and distributing its e-cigarettes and pens as well as its tobacco and menthol-flavored pods. All products must be removed from the US market or the company risks 'enforcement action,' the FDA said. ",
+    "user_id": 1
   },
   {
-    "title": "Test File2",
-    "content": "This is a test blog.",
-    "creating_date": "June 22, 2022 11:00:00",
-    "user_id": 3
+    "title": "Netflix Lays Off About 300 Employees in Latest Round of Cuts",
+    "content": "Netflix confirmed it laid off 'around 300 employees' on Thursday. It's the streaming giant's latest round of job cuts so far this year as it faces slowing growth. The layoffs were earlier reported by Variety. Netflix also cut 150 jobs in May, after it had eliminated a number of jobs at its fandom website, Tudum, in April. Tudum had been launched just five months earlier. ",
+    "user_id": 1
   },
   {
-    "title": "Test File3",
-    "content": "This is a test blog.",
-    "creating_date": "June 22, 2022 11:00:00",
-    "user_id": 3
+    "title": "How Abortion Searches Online Can Be Used Against You",
+    "content": "As Americans wait for a ruling from the US Supreme Court, longtime bench-watchers predict we're in the last days of federally protected abortion access. A draft majority opinion leaked last month indicates the court will overturn the 1973 landmark decision in Roe v. Wade. Already, abortion-seekers' digital trails are being used as criminal evidence against them in states where the pregnant are prosecuted.",
+    "user_id": 1
   },
   {
-    "title": "Test File4",
-    "content": "This is a test blog.",
-    "creating_date": "June 22, 2022 11:00:00",
-    "user_id": 3
+    "title": "Amazon Has New Robots Joining Its Warehouse Workforce",
+    "content": "While Amazon's Astro started hauling drinks from room to room in some homes this year, two new working robots will start hauling and sorting boxes at the company's warehouses in 2023. On Wednesday, Amazon gave a first look at Proteus and Cardinal, which the company says could reduce the risk of injury to warehouse' employees. Proteus, for example, is Amazon's 'first fully autonomous mobile robot' and looks like a large, lime-green Roomba, while Cardinal is stationary and is basically a long arm with suction cups instead of hands. Amazon wants the robots to reduce the amount of heavy lifting and other intense physical labor that employees do.",
+    "user_id": 1
   },
   {
-    "title": "Test File5",
-    "content": "This is a test blog.",
-    "creating_date": "June 22, 2022 11:00:00",
-    "user_id": 3
+    "title": "Interest Rates Keep Rising: Why You Should Pay Off Your Credit Card Now",
+    "content": "In response to rampant inflation, the Federal Reserve -- the US' central bank, which is in charge of monetary policy -- has initiated several interest rate hikes since March. This has a ripple effect through nearly every part of the economy, including financial tools like credit cards. As it becomes more expensive for banks to loan money to each other, it subsequently becomes more expensive for banks to lend to consumers. This leads to increases in credit card APRs, or interest rates. Unfortunately, that might mean that you personally absorb the higher costs.",
+    "user_id": 1
   }
 ]
