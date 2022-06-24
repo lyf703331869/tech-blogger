@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { Blog } = require("../../models");
 const withAuth = require("../../utils/auth");
-
+// post new blog into database
 router.post("/", withAuth, async (req, res) => {
   try {
     const newBlog = await Blog.create({
@@ -14,7 +14,7 @@ router.post("/", withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+// Update blog after editing
 router.put("/:id", withAuth, async (req, res) => {
   try {
     const newBlog = await Blog.update(req.body, {
