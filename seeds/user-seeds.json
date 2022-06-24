@@ -1,14 +1,6 @@
 [
   {
     "username": "Yafei",
-    "password": "password"
-  },
-  {
-    "username": "Michael",
-    "password": "password"
-  },
-  {
-    "username": "testuser",
     "password": "$2b$10$XhYgnp3/.LZhV2XPTT.vlOUX264/CzviTLFrkGDCyRPHtJnYaWdRy"
   }
 ]
