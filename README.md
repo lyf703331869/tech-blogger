@@ -49,13 +49,19 @@
   <img width="1432" alt="image" src="https://user-images.githubusercontent.com/103960619/175472030-0b26e6aa-a856-4718-bdcd-a6d84803d1a5.png">
   
   Login page:
-  <img width="1432" alt="image" src="https://user-images.githubusercontent.com/103960619/175472219-e21863c4-093b-4251-a895-d50a2702203f.png">
+  <img width="1438" alt="image" src="https://user-images.githubusercontent.com/103960619/175473816-c0cab170-dc3d-4dc0-ae36-b7f6dc152385.png">
   
+  Signup page:
+  <img width="1438" alt="image" src="https://user-images.githubusercontent.com/103960619/175473899-232b6713-d436-410e-abbe-33f8e35f7abc.png">
+
   Dashboard after login:
   <img width="1438" alt="image" src="https://user-images.githubusercontent.com/103960619/175472292-aa61dccc-8ddf-4e4d-ae3b-e728cd74e258.png">
   
   Blog page with comments by users:
   <img width="1430" alt="image" src="https://user-images.githubusercontent.com/103960619/175472555-59ef0391-8820-435d-9839-f99f83fcf763.png">
+  
+  Add new blog page:
+  <img width="1432" alt="image" src="https://user-images.githubusercontent.com/103960619/175473757-72f6064e-c136-4aa5-ad36-ab82d75cd991.png">
 
   
   ## Questions
