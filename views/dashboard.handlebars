@@ -8,7 +8,7 @@
           </div>
           <div>
             <p>Created by you on
-              {{format_date blog.creating_date}}</p>
+              {{format_date blog.createdAt}}</p>
           </div>
         </div>
         <div class="card-body">
@@ -18,13 +18,14 @@
         </div>
       </div></a>
     <div class="col-md-4">
+      <button class="btn edit-btn" data-id="{{blog.id}}">EDIT</button>
       <button
-        class="btn delete-btn btn-danger"
+        class="btn-danger delete-btn"
         data-id="{{blog.id}}"
       >DELETE</button>
     </div>
   </div>
 {{/each}}
-<button id="add-blog">New Blog</button>
+<button class="add-blog">New Blog</button>
 
-<script src="./js/dashboard.js"></script>
+<script src="/js/dashboard.js"></script>

@@ -5,17 +5,11 @@ const withAuth = require("../utils/auth");
 // GET all blogs for homepage
 router.get("/", async (req, res) => {
   try {
-    const dbBlogData = await Blog.findAll({
-      include: [
-        {
-          model: Comment,
-          attributes: ["comment_content", "comment_date"],
-        },
-        { model: User, attributes: ["username"] },
-      ],
+    const blogData = await Blog.findAll({
+      include: [{ model: User, attributes: ["username"] }],
     });
 
-    const blogs = dbBlogData.map((blog) => blog.get({ plain: true }));
+    const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
     res.render("homepage", {
       blogs,
@@ -28,18 +22,18 @@ router.get("/", async (req, res) => {
 });
 
 // GET one blog
-router.get("/blog/:id", async (req, res) => {
+router.get("/blog/:id", withAuth, async (req, res) => {
   try {
-    const dbBlogData = await Blog.findByPk(req.params.id, {
+    const blogData = await Blog.findByPk(req.params.id, {
       include: [
         {
           model: Comment,
-          attributes: ["comment_content", "comment_date"],
+          include: [User],
         },
         { model: User, attributes: ["username"] },
       ],
     });
-    const blog = dbBlogData.get({ plain: true });
+    const blog = blogData.get({ plain: true });
     res.render("blog", { ...blog, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
@@ -61,6 +55,33 @@ router.get("/dashboard", withAuth, async (req, res) => {
       loggedIn: true,
     });
   } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/dashboard/new", withAuth, async (req, res) => {
+  try {
+    res.render("newBlog", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/dashboard/edit/:id", withAuth, async (req, res) => {
+  try {
+    const blogData = await Blog.findByPk(req.params.id, {
+      include: [
+        {
+          model: Comment,
+          include: [User],
+        },
+        { model: User, attributes: ["username"] },
+      ],
+    });
+    const blog = blogData.get({ plain: true });
+    res.render("editBlog", { ...blog, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

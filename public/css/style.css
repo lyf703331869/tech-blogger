@@ -18,6 +18,13 @@ header {
   justify-content: center;
 }
 
+a:link {
+  color: #4e1e86;
+}
+
+textarea {
+  resize: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -69,13 +76,9 @@ nav ul {
 }
 
 nav a {
-  color: #b9c6ae;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-}
-
-nav a:hover {
-  color: #fff;
 }
 
 main {
@@ -119,9 +122,9 @@ button {
   width: 100%;
   margin: 2% 0;
 }
-.delete-btn {
-  margin: 2em;
-  margin-top: 4em;
+.btn {
+  margin: 5px;
+  margin-top: 3em;
 }
 
 footer {
@@ -131,12 +134,14 @@ footer {
   background-color: #13293d;
   color: #fff;
 }
-.btn.btn-danger {
+.btn-danger {
+  margin: 5px;
   background-color: #e64c66;
   color: #ffffff;
 }
 
-.btn.btn-danger:hover {
+.btn-danger:hover {
+  margin: 5px;
   background-color: #ee8294;
 }
 

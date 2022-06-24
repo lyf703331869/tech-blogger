@@ -13,12 +13,12 @@
       <h1>The Tech Blog</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/" class="nav-page">Home</a></li>
+          <li><a href="/dashboard" class="nav-page">Dashboard</a></li>
           {{#if loggedIn}}
             <li><button id="logout">Logout</button></li>
           {{else}}
-            <li><a href="/login">Login</a></li>
+            <li><a href="/login" class="nav-page">Login</a></li>
           {{/if}}
         </ul>
       </nav>

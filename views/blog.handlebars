@@ -1,0 +1,58 @@
+<p id="id" style="display:none">{{id}}</p>
+
+<div class="row">
+  <div class="card">
+    <div class="card-header">
+      <div>
+        {{title}}
+      </div>
+      <div>
+        <p>Created by
+          {{user.username}}
+          on
+          {{format_date createdAt}}</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <blockquote>
+        <p>{{content}}</p>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+    <div class="card-header">
+      Comments:
+    </div>
+    <div class="card-body">
+      {{#each comments as |comment|}}
+        <div>--
+          {{comment.comment_content}}
+          <br />
+          By:
+          {{user.username}}
+          <br />
+          <br /></div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+    <div class="card-header">
+      Add New Comment:
+    </div>
+    <form id="add-comment-form" class="card-body">
+      <textarea
+        id="comment"
+        style="width: 973px; height: 104px; padding:1em"
+      ></textarea>
+      <input type="submit" />
+    </form>
+  </div>
+</div>
+
+<script src="/js/comment.js"></script>

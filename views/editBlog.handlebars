@@ -1,0 +1,26 @@
+<p id="blog-id" style="display:none">{{id}}</p>
+
+<div class="row">
+  <div class="card">
+    <div class="card-header">
+      Edit Blog:
+    </div>
+    <form class="edit-blog-form card-body">
+      Title:
+      <input
+        id="blog-title"
+        type="text"
+        style="padding:1em"
+        value="{{title}}"
+      />
+      Content:
+      <textarea
+        id="blog-content"
+        style="width: 975px; height: 104px; padding:1em"
+      >{{content}}</textarea>
+      <input type="submit" />
+    </form>
+  </div>
+</div>
+
+<script src="/js/editBlog.js"></script>
