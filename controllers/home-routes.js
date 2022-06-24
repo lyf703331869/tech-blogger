@@ -61,7 +61,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
 // Render new blog section for adding new blog
 router.get("/dashboard/new", withAuth, async (req, res) => {
   try {
-    res.render("newBlog", {});
+    res.render("newBlog", { loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
   }
