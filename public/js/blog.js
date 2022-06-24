@@ -18,6 +18,8 @@ const newBlogHandler = async (event) => {
     }
   }
 };
+
+// when user click on new blog button, fetch post request
 document
   .querySelector(".add-blog-form")
   .addEventListener("submit", newBlogHandler);
