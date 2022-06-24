@@ -19,7 +19,7 @@ const newCommentHandler = async (event) => {
     }
   }
 };
-
+//when user click on the submit button, fetch post request to add new comment.
 document
   .querySelector("#add-comment-form")
   .addEventListener("submit", newCommentHandler);
