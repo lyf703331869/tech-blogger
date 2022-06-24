@@ -66,7 +66,7 @@ router.get("/dashboard/new", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+// Render edit blog section for specific blog chosen by user in dashboard
 router.get("/dashboard/edit/:id", withAuth, async (req, res) => {
   try {
     const blogData = await Blog.findByPk(req.params.id, {
