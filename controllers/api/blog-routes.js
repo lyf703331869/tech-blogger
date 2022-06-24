@@ -27,7 +27,7 @@ router.put("/:id", withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+// delete blog by id based on user choice
 router.delete("/:id", withAuth, async (req, res) => {
   try {
     const blogData = await Blog.destroy({
